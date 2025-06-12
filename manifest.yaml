@@ -4,7 +4,7 @@ author: "aicodex"
 name: "openai_api_compatible_llm_with_header"
 description:
   en_US: Model providers compatible with OpenAI's API standard, with HTTP headers, such as LM Studio.
-  zh_Hans: 兼容 OpenAI API 的模型供应商带请求头，例如 LM Studio 。
+  zh_Hans: 兼容 OpenAI API 的模型供应商，带请求头，例如 LM Studio 。
 label:
   en_US: "OpenAI-API-compatible-with-Headers"
 created_at: "2025-06-12T15:03:44.658609186Z"

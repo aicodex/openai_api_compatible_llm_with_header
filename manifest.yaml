@@ -1,6 +1,6 @@
-version: 0.0.2
+version: 0.0.1
 type: plugin
-author: "langgenius"
+author: "aicodex"
 name: "openai_api_compatible_llm_with_header"
 description:
   en_US: Model providers compatible with OpenAI's API standard, with HTTP headers, such as LM Studio.

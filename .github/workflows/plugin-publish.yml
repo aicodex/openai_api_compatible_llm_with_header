@@ -58,8 +58,8 @@ jobs:
       - name: Checkout target repo
         uses: actions/checkout@v3
         with:
-          repository: ${{steps.get_basic_info.outputs.author}}/dify-plugins
-          path: dify-plugins
+          repository: ${{steps.get_basic_info.outputs.author}}/openai_api_compatible_llm_with_header
+          path: openai_api_compatible_llm_with_header
           token: ${{ secrets.PLUGIN_ACTION }}
           fetch-depth: 1
           persist-credentials: true
@@ -67,10 +67,10 @@ jobs:
       - name: Prepare and create PR
         run: |
           PACKAGE_NAME="${{ steps.get_basic_info.outputs.plugin_name }}-${{ steps.get_basic_info.outputs.version }}.difypkg"
-          mkdir -p dify-plugins/${{ steps.get_basic_info.outputs.author }}/${{ steps.get_basic_info.outputs.plugin_name }}
-          mv "$PACKAGE_NAME" dify-plugins/${{ steps.get_basic_info.outputs.author }}/${{ steps.get_basic_info.outputs.plugin_name }}/
+          mkdir -p openai_api_compatible_llm_with_header/${{ steps.get_basic_info.outputs.author }}/${{ steps.get_basic_info.outputs.plugin_name }}
+          mv "$PACKAGE_NAME" openai_api_compatible_llm_with_header/${{ steps.get_basic_info.outputs.author }}/${{ steps.get_basic_info.outputs.plugin_name }}/
 
-          cd dify-plugins
+          cd openai_api_compatible_llm_with_header
 
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
